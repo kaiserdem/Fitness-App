@@ -12,6 +12,8 @@
 		AD06CC28267A2BD800ED9C80 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06CC27267A2BD800ED9C80 /* CreateView.swift */; };
 		AD06CC2C267A3F2A00ED9C80 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD06CC2B267A3F2A00ED9C80 /* DropDownView.swift */; };
 		AD19153F267B57F100C2FFC6 /* RemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19153E267B57F100C2FFC6 /* RemindView.swift */; };
+		AD191543267B5D1B00C2FFC6 /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD191542267B5D1B00C2FFC6 /* CreateChallengeViewModel.swift */; };
+		AD191546267B5DFE00C2FFC6 /* DropDownItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD191545267B5DFE00C2FFC6 /* DropDownItemProtocol.swift */; };
 		AD5148EF267A08B2003255A7 /* Fitness_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5148EE267A08B2003255A7 /* Fitness_AppApp.swift */; };
 		AD5148F1267A08B2003255A7 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5148F0267A08B2003255A7 /* LandingView.swift */; };
 		AD5148F3267A08B5003255A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD5148F2267A08B5003255A7 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 		AD06CC27267A2BD800ED9C80 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		AD06CC2B267A3F2A00ED9C80 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
 		AD19153E267B57F100C2FFC6 /* RemindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindView.swift; sourceTree = "<group>"; };
+		AD191542267B5D1B00C2FFC6 /* CreateChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewModel.swift; sourceTree = "<group>"; };
+		AD191545267B5DFE00C2FFC6 /* DropDownItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownItemProtocol.swift; sourceTree = "<group>"; };
 		AD5148EB267A08B2003255A7 /* Fitness App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5148EE267A08B2003255A7 /* Fitness_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_AppApp.swift; sourceTree = "<group>"; };
 		AD5148F0267A08B2003255A7 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
@@ -43,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD191541267B5CEE00C2FFC6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AD191542267B5D1B00C2FFC6 /* CreateChallengeViewModel.swift */,
+				AD191545267B5DFE00C2FFC6 /* DropDownItemProtocol.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		AD5148E2267A08B2003255A7 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				AD5148EE267A08B2003255A7 /* Fitness_AppApp.swift */,
+				AD191541267B5CEE00C2FFC6 /* ViewModels */,
 				AD5148F0267A08B2003255A7 /* LandingView.swift */,
 				AD06CC27267A2BD800ED9C80 /* CreateView.swift */,
 				AD19153E267B57F100C2FFC6 /* RemindView.swift */,
@@ -157,8 +171,10 @@
 				AD5148F1267A08B2003255A7 /* LandingView.swift in Sources */,
 				AD5148EF267A08B2003255A7 /* Fitness_AppApp.swift in Sources */,
 				AD06CC25267A161200ED9C80 /* Color+Extension.swift in Sources */,
+				AD191543267B5D1B00C2FFC6 /* CreateChallengeViewModel.swift in Sources */,
 				AD19153F267B57F100C2FFC6 /* RemindView.swift in Sources */,
 				AD06CC28267A2BD800ED9C80 /* CreateView.swift in Sources */,
+				AD191546267B5DFE00C2FFC6 /* DropDownItemProtocol.swift in Sources */,
 				AD06CC2C267A3F2A00ED9C80 /* DropDownView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
