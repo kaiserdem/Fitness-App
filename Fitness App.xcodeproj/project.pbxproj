@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		AD19153F267B57F100C2FFC6 /* RemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19153E267B57F100C2FFC6 /* RemindView.swift */; };
 		AD191543267B5D1B00C2FFC6 /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD191542267B5D1B00C2FFC6 /* CreateChallengeViewModel.swift */; };
 		AD191546267B5DFE00C2FFC6 /* DropDownItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD191545267B5DFE00C2FFC6 /* DropDownItemProtocol.swift */; };
+		AD4229A5268C6CC300B65170 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4229A4268C6CC300B65170 /* UserServices.swift */; };
 		AD49D205268B10FA0036231E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD49D204268B10FA0036231E /* GoogleService-Info.plist */; };
 		AD5148EF267A08B2003255A7 /* Fitness_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5148EE267A08B2003255A7 /* Fitness_AppApp.swift */; };
 		AD5148F1267A08B2003255A7 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5148F0267A08B2003255A7 /* LandingView.swift */; };
@@ -31,6 +32,7 @@
 		AD19153E267B57F100C2FFC6 /* RemindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindView.swift; sourceTree = "<group>"; };
 		AD191542267B5D1B00C2FFC6 /* CreateChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewModel.swift; sourceTree = "<group>"; };
 		AD191545267B5DFE00C2FFC6 /* DropDownItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownItemProtocol.swift; sourceTree = "<group>"; };
+		AD4229A4268C6CC300B65170 /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
 		AD49D204268B10FA0036231E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD5148EB267A08B2003255A7 /* Fitness App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5148EE267A08B2003255A7 /* Fitness_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_AppApp.swift; sourceTree = "<group>"; };
@@ -68,7 +70,6 @@
 				EC40FC9E9E8DDB2C7BBAA119 /* Pods-Fitness App.debug.xcconfig */,
 				CC755C9AFBA0B81514C7D131 /* Pods-Fitness App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +80,14 @@
 				AD191545267B5DFE00C2FFC6 /* DropDownItemProtocol.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AD4229A3268C6CA800B65170 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AD4229A4268C6CC300B65170 /* UserServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		AD5148E2267A08B2003255A7 = {
@@ -103,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				AD5148EE267A08B2003255A7 /* Fitness_AppApp.swift */,
+				AD4229A3268C6CA800B65170 /* Services */,
 				AD191541267B5CEE00C2FFC6 /* ViewModels */,
 				AD5148F0267A08B2003255A7 /* LandingView.swift */,
 				AD06CC27267A2BD800ED9C80 /* CreateView.swift */,
@@ -242,6 +252,7 @@
 			files = (
 				AD06CC22267A14B400ED9C80 /* PrimaryButtonStyle.swift in Sources */,
 				AD5148F1267A08B2003255A7 /* LandingView.swift in Sources */,
+				AD4229A5268C6CC300B65170 /* UserServices.swift in Sources */,
 				AD5148EF267A08B2003255A7 /* Fitness_AppApp.swift in Sources */,
 				AD06CC25267A161200ED9C80 /* Color+Extension.swift in Sources */,
 				AD191543267B5D1B00C2FFC6 /* CreateChallengeViewModel.swift in Sources */,
