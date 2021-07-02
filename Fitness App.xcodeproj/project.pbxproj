@@ -15,6 +15,8 @@
 		AD19153F267B57F100C2FFC6 /* RemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19153E267B57F100C2FFC6 /* RemindView.swift */; };
 		AD191543267B5D1B00C2FFC6 /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD191542267B5D1B00C2FFC6 /* CreateChallengeViewModel.swift */; };
 		AD191546267B5DFE00C2FFC6 /* DropDownItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD191545267B5DFE00C2FFC6 /* DropDownItemProtocol.swift */; };
+		AD3276A5268CA56C007C0DA8 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3276A4268CA56C007C0DA8 /* Challenge.swift */; };
+		AD3276A8268CA668007C0DA8 /* ChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3276A7268CA668007C0DA8 /* ChallengeService.swift */; };
 		AD4229A5268C6CC300B65170 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4229A4268C6CC300B65170 /* UserServices.swift */; };
 		AD49D205268B10FA0036231E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD49D204268B10FA0036231E /* GoogleService-Info.plist */; };
 		AD5148EF267A08B2003255A7 /* Fitness_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5148EE267A08B2003255A7 /* Fitness_AppApp.swift */; };
@@ -32,6 +34,8 @@
 		AD19153E267B57F100C2FFC6 /* RemindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindView.swift; sourceTree = "<group>"; };
 		AD191542267B5D1B00C2FFC6 /* CreateChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewModel.swift; sourceTree = "<group>"; };
 		AD191545267B5DFE00C2FFC6 /* DropDownItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownItemProtocol.swift; sourceTree = "<group>"; };
+		AD3276A4268CA56C007C0DA8 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		AD3276A7268CA668007C0DA8 /* ChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeService.swift; sourceTree = "<group>"; };
 		AD4229A4268C6CC300B65170 /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
 		AD49D204268B10FA0036231E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD5148EB267A08B2003255A7 /* Fitness App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,10 +86,19 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		AD3276A3268CA557007C0DA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD3276A4268CA56C007C0DA8 /* Challenge.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		AD4229A3268C6CA800B65170 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				AD4229A4268C6CC300B65170 /* UserServices.swift */,
+				AD3276A7268CA668007C0DA8 /* ChallengeService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -111,10 +124,11 @@
 		AD5148ED267A08B2003255A7 /* Fitness App */ = {
 			isa = PBXGroup;
 			children = (
-				AD5148EE267A08B2003255A7 /* Fitness_AppApp.swift */,
+				AD3276A3268CA557007C0DA8 /* Models */,
 				AD4229A3268C6CA800B65170 /* Services */,
 				AD191541267B5CEE00C2FFC6 /* ViewModels */,
 				AD5148F0267A08B2003255A7 /* LandingView.swift */,
+				AD5148EE267A08B2003255A7 /* Fitness_AppApp.swift */,
 				AD06CC27267A2BD800ED9C80 /* CreateView.swift */,
 				AD19153E267B57F100C2FFC6 /* RemindView.swift */,
 				AD06CC21267A14B400ED9C80 /* PrimaryButtonStyle.swift */,
@@ -254,10 +268,12 @@
 				AD5148F1267A08B2003255A7 /* LandingView.swift in Sources */,
 				AD4229A5268C6CC300B65170 /* UserServices.swift in Sources */,
 				AD5148EF267A08B2003255A7 /* Fitness_AppApp.swift in Sources */,
+				AD3276A5268CA56C007C0DA8 /* Challenge.swift in Sources */,
 				AD06CC25267A161200ED9C80 /* Color+Extension.swift in Sources */,
 				AD191543267B5D1B00C2FFC6 /* CreateChallengeViewModel.swift in Sources */,
 				AD19153F267B57F100C2FFC6 /* RemindView.swift in Sources */,
 				AD06CC28267A2BD800ED9C80 /* CreateView.swift in Sources */,
+				AD3276A8268CA668007C0DA8 /* ChallengeService.swift in Sources */,
 				AD191546267B5DFE00C2FFC6 /* DropDownItemProtocol.swift in Sources */,
 				AD06CC2C267A3F2A00ED9C80 /* DropDownView.swift in Sources */,
 			);
