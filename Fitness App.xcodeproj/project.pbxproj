@@ -15,6 +15,7 @@
 		AD19153F267B57F100C2FFC6 /* RemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19153E267B57F100C2FFC6 /* RemindView.swift */; };
 		AD191543267B5D1B00C2FFC6 /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD191542267B5D1B00C2FFC6 /* CreateChallengeViewModel.swift */; };
 		AD191546267B5DFE00C2FFC6 /* DropDownItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD191545267B5DFE00C2FFC6 /* DropDownItemProtocol.swift */; };
+		AD1BFA33268F436600A0DE2C /* IncrementError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1BFA32268F436600A0DE2C /* IncrementError.swift */; };
 		AD3276A5268CA56C007C0DA8 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3276A4268CA56C007C0DA8 /* Challenge.swift */; };
 		AD3276A8268CA668007C0DA8 /* ChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3276A7268CA668007C0DA8 /* ChallengeService.swift */; };
 		AD4229A5268C6CC300B65170 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4229A4268C6CC300B65170 /* UserServices.swift */; };
@@ -34,6 +35,7 @@
 		AD19153E267B57F100C2FFC6 /* RemindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindView.swift; sourceTree = "<group>"; };
 		AD191542267B5D1B00C2FFC6 /* CreateChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewModel.swift; sourceTree = "<group>"; };
 		AD191545267B5DFE00C2FFC6 /* DropDownItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownItemProtocol.swift; sourceTree = "<group>"; };
+		AD1BFA32268F436600A0DE2C /* IncrementError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementError.swift; sourceTree = "<group>"; };
 		AD3276A4268CA56C007C0DA8 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		AD3276A7268CA668007C0DA8 /* ChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeService.swift; sourceTree = "<group>"; };
 		AD4229A4268C6CC300B65170 /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				AD49D204268B10FA0036231E /* GoogleService-Info.plist */,
 				AD5148F7267A08B5003255A7 /* Info.plist */,
 				AD5148F4267A08B5003255A7 /* Preview Content */,
+				AD1BFA32268F436600A0DE2C /* IncrementError.swift */,
 			);
 			path = "Fitness App";
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				AD3276A8268CA668007C0DA8 /* ChallengeService.swift in Sources */,
 				AD191546267B5DFE00C2FFC6 /* DropDownItemProtocol.swift in Sources */,
 				AD06CC2C267A3F2A00ED9C80 /* DropDownView.swift in Sources */,
+				AD1BFA33268F436600A0DE2C /* IncrementError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
