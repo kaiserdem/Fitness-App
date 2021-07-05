@@ -24,6 +24,7 @@
 		AD5148F1267A08B2003255A7 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5148F0267A08B2003255A7 /* LandingView.swift */; };
 		AD5148F3267A08B5003255A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD5148F2267A08B5003255A7 /* Assets.xcassets */; };
 		AD5148F6267A08B5003255A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD5148F5267A08B5003255A7 /* Preview Assets.xcassets */; };
+		AD94F6A2268F5928009DD131 /* AuthPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD94F6A1268F5928009DD131 /* AuthPublisher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		AD5148F2267A08B5003255A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD5148F5267A08B5003255A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD5148F7267A08B5003255A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD94F6A1268F5928009DD131 /* AuthPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPublisher.swift; sourceTree = "<group>"; };
 		CC755C9AFBA0B81514C7D131 /* Pods-Fitness App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness App.release.xcconfig"; path = "Target Support Files/Pods-Fitness App/Pods-Fitness App.release.xcconfig"; sourceTree = "<group>"; };
 		EC40FC9E9E8DDB2C7BBAA119 /* Pods-Fitness App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness App.debug.xcconfig"; path = "Target Support Files/Pods-Fitness App/Pods-Fitness App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +128,7 @@
 		AD5148ED267A08B2003255A7 /* Fitness App */ = {
 			isa = PBXGroup;
 			children = (
+				AD94F6A0268F58FC009DD131 /* Publishers */,
 				AD3276A3268CA557007C0DA8 /* Models */,
 				AD4229A3268C6CA800B65170 /* Services */,
 				AD191541267B5CEE00C2FFC6 /* ViewModels */,
@@ -151,6 +154,14 @@
 				AD5148F5267A08B5003255A7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD94F6A0268F58FC009DD131 /* Publishers */ = {
+			isa = PBXGroup;
+			children = (
+				AD94F6A1268F5928009DD131 /* AuthPublisher.swift */,
+			);
+			path = Publishers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD94F6A2268F5928009DD131 /* AuthPublisher.swift in Sources */,
 				AD06CC22267A14B400ED9C80 /* PrimaryButtonStyle.swift in Sources */,
 				AD5148F1267A08B2003255A7 /* LandingView.swift in Sources */,
 				AD4229A5268C6CC300B65170 /* UserServices.swift in Sources */,

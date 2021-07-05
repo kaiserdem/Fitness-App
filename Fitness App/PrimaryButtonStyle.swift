@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct PrimaryButtonStyle: ButtonStyle {
+    
     var fillColor: Color = .darckPrimaryButton
+    
     func makeBody(configuration: Configuration) -> some View {
         return PrimaryButton(configuration: configuration,
                              fillColor: fillColor)
     }
     
     struct PrimaryButton: View {
+        
         let configuration: Configuration
         let fillColor: Color
+        
         var body: some View {
             return configuration.label
                 .padding(20)
