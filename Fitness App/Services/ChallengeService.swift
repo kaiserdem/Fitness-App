@@ -12,6 +12,7 @@ import FirebaseFirestoreSwift
 protocol ChallengeServiceProtocol {
     func create(_ challenge: Challenge) -> AnyPublisher<Void, IncrementError>
 
+    func observerChallenges(userId:UserId) -> AnyPublisher<[Challenge] , IncrementError>
 }
 
 final class ChallengeService: ChallengeServiceProtocol {
@@ -35,5 +36,22 @@ final class ChallengeService: ChallengeServiceProtocol {
         }.eraseToAnyPublisher()
     }
     
+    func observerChallenges(userId: UserId) -> AnyPublisher<[Challenge], IncrementError> {
+        let query = db.collection("challengs").whereField("userId", isEqualTo: userId)
+        return Publishers.QuerySnapshotPublisher(query: query)
+            .flatMap { shapshot -> AnyPublisher<[Challenge], IncrementError> in
+                do {
+                    let challenges = try shapshot.documents.compactMap {
+                        try $0.data(as: Challenge.self)
+                      }
+                    return Just(challenges)
+                        .setFailureType(to: IncrementError.self)
+                        .eraseToAnyPublisher()
+                    } catch {
+                        return Fail(error: .default(description:"Parsing error")).eraseToAnyPublisher()
+                    }
+            }.eraseToAnyPublisher()
+    
+    }
     
 }

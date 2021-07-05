@@ -75,23 +75,22 @@ final class CreateChallengeViewModel: ObservableObject {
     private func currentUserId() -> AnyPublisher<UserId, IncrementError> {
         print("getting user id")
         return userService.currentUser().flatMap { user -> AnyPublisher<UserId,IncrementError> in
-            return Fail(error:.default(description:"some firebase auth error")).eraseToAnyPublisher()
-//            if let user = user?.uid {
-//                return Just(user)
-//                    .setFailureType(to: IncrementError.self)
-//                    .eraseToAnyPublisher()
-//            } else {
-//                return self.userService
-//                    .signInAnonymously()
-//                    .map { $0.uid }
-//                    .eraseToAnyPublisher()
-//            }
+            //return Fail(error:.default(description:"some firebase auth error")).eraseToAnyPublisher()
+            if let user = user?.uid {
+                return Just(user)
+                    .setFailureType(to: IncrementError.self)
+                    .eraseToAnyPublisher()
+            } else {
+                return self.userService
+                    .signInAnonymously()
+                    .map { $0.uid }
+                    .eraseToAnyPublisher()
+            }
         }.eraseToAnyPublisher()
     }
 }
 
 extension CreateChallengeViewModel {
-    
     struct  ChallengePartViewModel: DropDownItemProtocol {
         var selectedOption: DropDownOption
         
